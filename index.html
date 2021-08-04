@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        #id{
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicios</h1>
+    </header>
+    <nav>
+        <a href wm-nav="exercicios/teste.html">00- teste</a>
+        <a href wm-nav="exercicios/texto1.html">01 - texto1</a>
+        <a href wm-nav="exercicios/texto2.html">02 - texto2</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso de web moderno
+    </footer>
+    <script>
+        //como ele retorna uma lista, forEach serve para navegar entre os links encontrados nas tags
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            //aqui add uma função que será acionada com determinado evento(e) no caso o clique do mouse sobre o link
+            const conteudo = document.getElementById('conteudo')
+            link.onclick = function(e){
+                e.preventDefault()
+                
+                //aqui vamos fazer uma requisição ajax para colocar o conteudo de outra pagina externa dentro de uma seção chamada ajax usando fetch
+                fetch(link.getAttribute('wm-nav'))
+                    //essa função serve pra pegar o conteudo html da pagina que foi feita a requisição
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>
