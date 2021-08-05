@@ -1,10 +1,10 @@
 <h1>Projeto</h1>
 <ul class="tree">
     <li>
-        backend
+        <span wm-folder>backend</span> 
         <ul>
             <li>
-                app
+                <span wm-folder>app</span>
                 <ul>
                     <li>Produto.js</li>
                     <li>Usuario.js</li>
@@ -12,7 +12,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span wm-folder>config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -22,10 +22,10 @@
         </ul>
     </li>
     <li>
-        frontend
+        <span wm-folder>frontend</span>
         <ul>
             <li>
-                publi
+                <span wm-folder>publi</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -38,5 +38,13 @@
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
 <script>
-    
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e){
+            //aqui pega o proximo elemento depois do elemento selecionado pelo query
+            const ul = folder.nextElementSibling
+            //aqui muda o estilo dependendo da situação do evento
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
 </script>
