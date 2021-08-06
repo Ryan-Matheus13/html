@@ -24,8 +24,8 @@
     margin: 1%;
 }
 
-.col p {
-    text-align: right;
+.col span {
+    float: right;
     font-size: 26px;
     font-weight: bold;
     padding-top: 2px;
