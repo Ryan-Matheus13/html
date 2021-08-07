@@ -11,88 +11,89 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <title>Calculadora</title>
   </head>
   <body>
     <div class="container no-gutters p-0">
       <h1>calculadora</h1>
       <div class="row m-0 p-0">
-          <div class="col p-0">
-                <input readonly class="resultado" value="0" id="tela"/>
-          </div>
+        <div class="col p-0">
+          <input readonly class="resultado" id="tela" value="0"/>
+        </div>
       </div>
       <div class="row m-0 p-0">
         <div class="col-3 p-0" ce>
           <button id="apagar">CE</button>
         </div>
         <div class="col-3 p-0">
-          <button id="potencia">x<sup>2</sup></button>
+          <button id="limpar">C</button>
         </div>
         <div class="col-3 p-0">
-          <button id="porcentagem">%</button>
+          <button id="potencia">x<sup>2</sup></button>
         </div>
         <div class="col-3 p-0">
           <button id="divisao">&divide;</button>
         </div>
       </div>
-
+      
       <div class="row m-0 p-0">
         <div class="col-3 p-0">
-          <button id="">7</button>
+          <button id="btnValor7">7</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">8</button>
+          <button id="btnValor8">8</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">9</button>
+          <button id="btnValor9">9</button>
         </div>
         <div class="col-3 p-0">
           <button id="multiplicacao">x</button>
         </div>
       </div>
-
+      
       <div class="row m-0 p-0">
         <div class="col-3 p-0">
-          <button id="">4</button>
+          <button id="btnValor4">4</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">5</button>
+          <button id="btnValor5">5</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">6</button>
+          <button id="btnValor6">6</button>
         </div>
         <div class="col-3 p-0">
           <button id="subtracao">-</button>
         </div>
       </div>
-
+      
       <div class="row m-0 p-0">
         <div class="col-3 p-0">
-          <button id="">1</button>
+          <button id="btnValor1">1</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">2</button>
+          <button id="btnValor2">2</button>
         </div>
         <div class="col-3 p-0">
-          <button id="">3</button>
+          <button id="btnValor3">3</button>
         </div>
         <div class="col-3 p-0">
           <button id="adicao">+</button>
         </div>
       </div>
-
+      
       <div class="row m-0 p-0">
         <div class="col-6 p-0">
-          <button class="btnMaior">0</button>
+          <button class="btnMaior" id="btnValor0">0</button>
         </div>
         <div class="col-3 p-0">
-          <button id="virgula">,</button>
+          <button id="virgula">.</button>
         </div>
         <div class="col-3 p-0">
           <button id="igual">=</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
-</html>
+  </html>
+  

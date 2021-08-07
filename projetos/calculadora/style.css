@@ -67,7 +67,7 @@ button {
     font-size: 18px;
 }
 
-#apagar, #potencia, #porcentagem {
+#apagar, #limpar, #potencia {
     background-color: rgb(202, 202, 202);
     color: black;
 }
@@ -83,7 +83,7 @@ button:hover {
     background-color: rgb(97, 97, 97);
 }
 
-#apagar:hover, #potencia:hover, #porcentagem:hover {
+#apagar:hover, #potencia:hover, #limpar:hover {
     background-color: rgb(153, 153, 153);
 }
 
