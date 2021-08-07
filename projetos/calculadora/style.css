@@ -6,6 +6,7 @@
     border: solid 1px rgb(87, 87, 87);
     border-radius: 10px;
     background-color: rgb(68, 68, 68);
+    user-select: none;
 }
 
 .container h1 {
@@ -19,76 +20,73 @@
 }
 
 .col {
-    border: rgb(126, 126, 126) solid 1px;
-    border-radius: 10px;
+    height: 100%;
     margin: 1%;
 }
 
-.col span {
-    float: right;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 2px;
-    padding-bottom: 5px;
+input {
+    width: 100%;
+    padding: 5px 15px 5px 0;
+    background-color: rgb(82, 82, 82);
+    border: rgb(126, 126, 126) solid 1px;
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: right;
     color: white;
-    margin: 0;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .col-3 {
     flex: 1;
-    border: solid 1px rgb(87, 87, 87);
     width: 25%;
     height: 100%;
-    border-radius: 15px;
-    margin: 1%;
-    background-color: rgb(126, 125, 125);
-    color: white;
-    font-weight: bold;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
 
 .col-6 {
-    border: solid rgb(87, 87, 87) 1px;
+    width: 50%;
+    height: 100%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+button {
+    flex: 1;
+    border: solid 1px rgb(87, 87, 87);
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 15px ;
     background-color: rgb(126, 125, 125);
     color: white;
     font-weight: bold;
-    width: 49%;
-    height: 100%;
-    margin-bottom: 1%;
-    border-radius: 15px;
-    margin: 1%;
+    font-size: 18px;
 }
 
-p {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 12.5px;
-}
-
-#topo {
+#apagar, #potencia, #porcentagem {
     background-color: rgb(202, 202, 202);
     color: black;
 }
 
-#op {
+#divisao, #multiplicacao, #subtracao, #adicao, #igual {
     background-color: rgb(255, 174, 107);
     color: white;
 }
 
 /* CSS hover */
 
-.col-3:hover {
+button:hover {
     background-color: rgb(97, 97, 97);
 }
 
-.col-6:hover {
-    background-color: rgb(97, 97, 97);
-}
-
-#topo:hover {
+#apagar:hover, #potencia:hover, #porcentagem:hover {
     background-color: rgb(153, 153, 153);
 }
 
-#op:hover {
+#divisao:hover, #multiplicacao:hover, #subtracao:hover, #adicao:hover, #igual:hover {
     background-color: rgb(227, 133, 81);
 }
